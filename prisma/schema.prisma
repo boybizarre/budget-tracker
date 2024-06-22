@@ -63,5 +63,3 @@ model YearHistory {
 
   @@id([month, year, userId])
 }
-
-
