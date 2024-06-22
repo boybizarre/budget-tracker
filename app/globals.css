@@ -82,7 +82,7 @@
   }
 
   html {
-  /* this defines what 1rem is; typography but it's global */
-  font-size: 62.5%; /* 10px */
-}
+    /* this defines what 1rem is; typography but it's global */
+    font-size: 100%;
+  }
 }
