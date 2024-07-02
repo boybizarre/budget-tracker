@@ -3,10 +3,13 @@
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import Logo, { LogoMobile } from '@/components/Logo';
-import { ThemeSwitcherBtn } from './ThemeSwitcherBtn';
 
 import { UserButton } from '@clerk/nextjs';
+
+import { ThemeSwitcherBtn } from './ThemeSwitcherBtn';
+
+// components
+import Logo, { LogoMobile } from '@/components/Logo';
 
 // utils
 import { cn } from '@/lib/utils';

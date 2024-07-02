@@ -20,10 +20,10 @@ model UserSettings {
 
 model Category {
   createdAt DateTime @default(now())
-  name String
   userId String
-  icon String
   type String
+  name String
+  icon String
 
   @@unique([name, userId, type])
 }

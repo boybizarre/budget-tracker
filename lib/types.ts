@@ -1,4 +1,4 @@
-export type Options = {
+export type Option = {
   value: string;
   label: string;
   locale?: string;
