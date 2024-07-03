@@ -7,11 +7,12 @@ import prisma from '@/lib/prisma';
 // components
 import { Button } from '../.././components/ui/button';
 import CreateTransactionDialog from './_components/CreateTransactionDialog';
+import Overview from './_components/Overview';
 
 async function page() {
   const user = await currentUser();
   if (!user) {
-    redirect('/sign-in ');
+    redirect('/sign-in');
   }
 
   const userSettings = await prisma.userSettings.findUnique({
@@ -57,6 +58,8 @@ async function page() {
           </div>
         </div>
       </div>
+
+      <Overview userSettings={userSettings} />
     </div>
   );
 }

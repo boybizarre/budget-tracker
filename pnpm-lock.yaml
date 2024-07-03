@@ -8,6 +8,12 @@ dependencies:
   '@clerk/nextjs':
     specifier: ^5.1.4
     version: 5.1.4(next@14.2.3)(react-dom@18.3.1)(react@18.3.1)
+  '@emoji-mart/data':
+    specifier: ^1.2.1
+    version: 1.2.1
+  '@emoji-mart/react':
+    specifier: ^1.1.1
+    version: 1.1.1(emoji-mart@5.6.0)(react@18.3.1)
   '@hookform/resolvers':
     specifier: ^3.6.0
     version: 3.6.0(react-hook-form@7.52.0)
@@ -281,6 +287,20 @@ packages:
     engines: {node: '>=18.17.0'}
     dependencies:
       csstype: 3.1.1
+    dev: false
+
+  /@emoji-mart/data@1.2.1:
+    resolution: {integrity: sha512-no2pQMWiBy6gpBEiqGeU77/bFejDqUTRY7KX+0+iur13op3bqUsXdnwoZs6Xb1zbv0gAj5VvS1PWoUUckSr5Dw==}
+    dev: false
+
+  /@emoji-mart/react@1.1.1(emoji-mart@5.6.0)(react@18.3.1):
+    resolution: {integrity: sha512-NMlFNeWgv1//uPsvLxvGQoIerPuVdXwK/EUek8OOkJ6wVOWPUizRBJU0hDqWZCOROVpfBgCemaC3m6jDOXi03g==}
+    peerDependencies:
+      emoji-mart: ^5.2
+      react: ^16.8 || ^17 || ^18
+    dependencies:
+      emoji-mart: 5.6.0
+      react: 18.3.1
     dev: false
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.57.0):
@@ -2868,6 +2888,10 @@ packages:
 
   /embla-carousel@8.1.5:
     resolution: {integrity: sha512-R6xTf7cNdR2UTNM6/yUPZlJFRmZSogMiRjJ5vXHO65II5MoUlrVYUAP0fHQei/py82Vf15lj+WI+QdhnzBxA2g==}
+    dev: false
+
+  /emoji-mart@5.6.0:
+    resolution: {integrity: sha512-eJp3QRe79pjwa+duv+n7+5YsNhRcMl812EcFVwrnRvYKoNPoQb5qxU8DG6Bgwji0akHdp6D4Ln6tYLG58MFSow==}
     dev: false
 
   /emoji-regex@8.0.0:

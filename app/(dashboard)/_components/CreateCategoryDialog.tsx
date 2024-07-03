@@ -2,11 +2,11 @@
 
 import { useState, useCallback } from 'react';
 
-import { Category } from '@prisma/client';
 
 import { toast } from 'sonner';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 import { useTheme } from 'next-themes';
 import { PlusSquare, CircleOff, Loader2 } from 'lucide-react';
@@ -46,10 +46,9 @@ import {
   CreateCategorySchema,
   CreateCategorySchemaType,
 } from '@/schema/categories';
+import { Category } from '@prisma/client';
 
 import { CreateCategory } from '../actions/categories';
-
-import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 interface Props {
   type: TransactionType,
@@ -111,7 +110,7 @@ function CreateCategoryDialog({ type, successCallback }: Props) {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger>
+      <DialogTrigger asChild>
         <Button
           variant={'ghost'}
           className='flex border-separate items-center justify-start rounded-none border-b p-3 text-muted-foreground w-full'

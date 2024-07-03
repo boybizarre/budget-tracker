@@ -18,8 +18,6 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-  CommandSeparator,
-  CommandShortcut,
 } from '@/components/ui/command';
 
 import { Button } from '@/components/ui/button';
