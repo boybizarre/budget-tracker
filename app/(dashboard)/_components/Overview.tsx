@@ -18,7 +18,7 @@ function Overview({ userSettings }: { userSettings: UserSettings }) {
     to: new Date(),
   });
 
-  console.log({ from: dateRange.from, to: dateRange.to });
+  // console.log({ from: dateRange.from, to: dateRange.to });
 
   return (
     <>
