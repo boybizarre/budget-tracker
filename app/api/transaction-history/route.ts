@@ -40,7 +40,7 @@ export type GetTransactionHistoryResponseType = Awaited<ReturnType<typeof getTra
 
 async function getTransactionsHistory(userId: string, from:Date, to:Date) {
 
-  // retriving the user's currency from the database
+  // retrieving the user's currency from the database
   const userSettings = await prisma.userSettings.findUnique({
     where: {
       userId,
