@@ -23,7 +23,7 @@ import CreateCategoryDialog from '../_components/CreateCategoryDialog';
 import { TrendingUp, TrendingDown, PlusSquare, TrashIcon } from 'lucide-react';
 import DeleteCategoryDialog from '../_components/DeleteCategoryDialog';
 
-function page() {
+function ManagePage() {
   return (
     <>
       {/* header */}
@@ -58,7 +58,7 @@ function page() {
   );
 }
 
-export default page;
+export default ManagePage;
 
 function CategoryList({ type }: { type: TransactionType }) {
   const { data, isLoading, refetch } = useQuery({
