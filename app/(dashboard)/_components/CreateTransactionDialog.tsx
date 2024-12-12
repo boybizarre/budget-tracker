@@ -224,7 +224,7 @@ function CreateTransactionDialog({ trigger, type }: Props) {
                           selected={field.value}
                           onSelect={(value) => {
                             if (!value) return;
-                            console.log('@@CALENDER', value);
+                            // console.log('@@CALENDER', value);
                             field.onChange(value);
                           }}
                           initialFocus

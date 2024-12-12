@@ -132,7 +132,7 @@ function MonthSelector({
               { month: 'long' }
             );
 
-            console.log(monthStr);
+            // console.log(monthStr);
 
             return (
               <SelectItem key={month} value={month.toString()}>

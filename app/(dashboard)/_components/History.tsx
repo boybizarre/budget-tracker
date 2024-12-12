@@ -54,8 +54,6 @@ function History({ userSettings }: { userSettings: UserSettings }) {
     refetchOnWindowFocus: false,
   });
 
-  console.log(historyDataQuery.data);
-
   const dataAvailable =
     historyDataQuery.data && historyDataQuery.data.length > 0;
 
@@ -124,7 +122,7 @@ function History({ userSettings }: { userSettings: UserSettings }) {
                     padding={{ left: 5, right: 5 }}
                     dataKey={(data) => {
                       const { year, month, day } = data;
-                      console.log(data, 'XAxis data');
+                      // console.log(data, 'XAxis data');
                       const date = new Date(year, month, day || 1);
                       if (timeFrame === 'year') {
                         return date.toLocaleString('default', {

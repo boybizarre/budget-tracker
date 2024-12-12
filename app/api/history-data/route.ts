@@ -86,7 +86,7 @@ async function getYearHistoryData(userId: string, year: number) {
     ],
   });
 
-  console.log(result);
+  // console.log(result);
 
   if (!result || result.length === 0) return [];
 
@@ -139,7 +139,7 @@ async function getMonthHistoryData(
     ],
   });
 
-  console.log(result);
+  // console.log(result);
 
   if (!result || result.length === 0) return [];
 

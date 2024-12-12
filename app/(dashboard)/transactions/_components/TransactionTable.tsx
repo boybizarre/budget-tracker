@@ -206,7 +206,7 @@ function TransactionTable({ from, to }: Props) {
     return Array.from(uniqueCategories);
   }, [history.data]);
 
-  console.log(categoriesOptions);
+  // console.log(categoriesOptions);
 
   return (
     <div className='w-full'>

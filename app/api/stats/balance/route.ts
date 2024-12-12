@@ -52,7 +52,7 @@ async function getBalanceStats(userId: string, from: Date, to: Date) {
     },
   });
 
-  console.log(totals);
+  // console.log(totals);
 
   return {
     expense: totals.find((total) => total.type === 'expense')?._sum.amount || 0,

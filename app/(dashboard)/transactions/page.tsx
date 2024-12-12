@@ -30,10 +30,10 @@ function TransactionsPage() {
             initialDateTo={dateRange.to}
             showCompare={false}
             onUpdate={(values) => {
-              console.log(values);
+              // console.log(values);
               const { from, to } = values.range;
 
-              console.log({ from, to });
+              // console.log({ from, to });
 
               // we update the date range only if both dates are set
               if (!from || !to) return;

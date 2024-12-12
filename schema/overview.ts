@@ -11,7 +11,7 @@ export const OverviewQuerySchema = z
     const { from, to } = args;
 
     const days = differenceInDays(to, from);
-    console.log(days);
+    // console.log(days);
     // if difference in from date and to date is greater than 0 and less than max range days
     const isValidRange = days >= 0 && days <= MAX_DATE_RANGE_DAYS;
     return isValidRange;

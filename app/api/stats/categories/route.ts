@@ -59,6 +59,6 @@ async function getCategoriesStats(userId: string, from: Date, to: Date) {
 
   });
 
-  console.log(stats);
+  // console.log(stats);
   return stats;
 }
