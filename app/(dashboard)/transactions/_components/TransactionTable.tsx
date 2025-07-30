@@ -32,19 +32,18 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 
 import { DataTableViewOptions } from '@/components/datatable/ColumnToggle';
 import { DataTableColumnHeader } from '@/components/datatable/ColumnHeader';
 import { DataTableFacetedFilter } from '@/components/datatable/FacetedFilters';
+import DeleteTransactionDialog from './DeleteTransactionDialog';
 import SkeletonWrapper from '@/components/SkeletonWrapper';
 
 import { DateToUTCDate } from '@/lib/helpers';
 import { cn } from '@/lib/utils';
 import { GetTransactionHistoryResponseType } from '@/app/api/transaction-history/route';
-
-import DeleteTransactionDialog from './DeleteTransactionDialog';
 
 interface Props {
   from: Date;
@@ -343,25 +342,25 @@ function RowActions({ transaction }: { transaction: TransactionHistoryRow }) {
       />
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant={"ghost"} className="h-8 w-8 p-0 ">
-            <span className="sr-only">Open menu</span>
-            <MoreHorizontal className="h-4 w-4" />
+          <Button variant={'ghost'} className='h-8 w-8 p-0 '>
+            <span className='sr-only'>Open menu</span>
+            <MoreHorizontal className='h-4 w-4' />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
+        <DropdownMenuContent align='end'>
           <DropdownMenuLabel>Actions</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem
-            className="flex items-center gap-2"
+            className='flex items-center gap-2'
             onSelect={() => {
               setShowDeleteDialog((prev) => !prev);
             }}
           >
-            <TrashIcon className="h-4 w-4 text-muted-foreground" />
+            <TrashIcon className='h-4 w-4 text-muted-foreground' />
             Delete
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </>
   );
-};
+}
